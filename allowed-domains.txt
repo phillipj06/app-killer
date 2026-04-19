@@ -1,0 +1,294 @@
+# /usr/local/etc/allowed-domains.txt
+# One domain per line. Use *.domain.com for wildcard subdomains.
+# Lines starting with # are comments.
+
+# Google / Gmail / Docs
+*.google.com
+*.gmail.com
+*.googleapis.com
+*.gstatic.com
+*.googleusercontent.com
+# *.googlevideo.com  — blocked (video)
+*.google-analytics.com
+*.googletagmanager.com
+*.doubleclick.net
+*.ggpht.com
+google.com
+gmail.com
+
+# Google Docs specific
+docs.google.com
+sheets.google.com
+slides.google.com
+drive.google.com
+drive.usercontent.google.com
+forms.google.com
+calendar.google.com
+dl.google.com
+tools.google.com
+ogs.google.com
+clients1.google.com
+
+# Gmail / Google apps specific subdomains
+mail.google.com
+mail-ads.google.com
+accounts.google.com
+clients6.google.com
+lh3.google.com
+lh3.googleusercontent.com
+apis.google.com
+ssl.gstatic.com
+fonts.googleapis.com
+fonts.gstatic.com
+contacts.google.com
+play.google.com
+studio.workspace.google.com
+*.workspace.google.com
+*.withgoogle.com
+csp.withgoogle.com
+signaler-pa.clients6.google.com
+people-pa.clients6.google.com
+peoplestack-pa.clients6.google.com
+peoplestackwebexperiments-pa.clients6.google.com
+drivefrontend-pa.clients6.google.com
+waa-pa.clients6.google.com
+ogads-pa.clients6.google.com
+addons-pa.clients6.google.com
+appsgrowthpromo-pa.clients6.google.com
+taskassist-pa.clients6.google.com
+espresso-pa.clients6.google.com
+appsgenaiserver-pa.clients6.google.com
+blobcomments-pa.clients6.google.com
+*.clients6.google.com
+googleads.g.doubleclick.net
+ghs.googlehosted.com
+*.googlehosted.com
+googlehosted.l.googleusercontent.com
+googlemail.l.google.com
+lh7-rt.googleusercontent.com
+gcs-us-00003.content-storage-download.googleapis.com
+youtube.googleapis.com
+
+# Instructure (Canvas LMS)
+*.instructure.com
+instructure.com
+ttsd.instructure.com
+cluster1.instructure.com
+http-redirector.instructure.com
+aff82325-e073-4508-80b7-da72439a733a.iad.login.instructure.com
+*.login.instructure.com
+*.iad.login.instructure.com
+*.canvaslms.com
+canvaslms.com
+sso.canvaslms.com
+*.canvas.net
+canvas.net
+accounts.canvas.net
+*.inscloudgate.net
+inscloudgate.net
+*.inst-fs-iad-prod.inscloudgate.net
+*.instructure-uploads.s3.amazonaws.com
+cdn.instructure.com
+canvadocs.instructure.com
+du-cdi.instructure.com
+*.pandapush.com
+pandapush.com
+*.canvasapi.com
+canvasapi.com
+
+# Canvas AWS backends (from DNS capture)
+canvas-iad-prod-c1-1262762608.us-east-1.elb.amazonaws.com
+catalog-prod-nsg2mwxxnx-1551288887.us-east-1.elb.amazonaws.com
+*.us-east-1.elb.amazonaws.com
+*.s3.amazonaws.com
+*.s3-w.us-east-1.amazonaws.com
+s3-1-w.amazonaws.com
+
+# CloudFront CDN (used by Canvas, Desmos)
+dppq4m4jupp04.cloudfront.net
+dzyvg4d46ly1y.cloudfront.net
+*.cloudfront.net
+
+# Desmos
+*.desmos.com
+desmos.com
+www.desmos.com
+teacher.desmos.com
+student.desmos.com
+
+# TTSD Schools
+*.ttsdschools.org
+ttsdschools.org
+
+# Quizlet
+*.quizlet.com
+quizlet.com
+assets.quizlet.com
+el.quizlet.com
+jg7y.quizlet.com
+o.quizlet.com
+up.quizlet.com
+*.prismic.io
+prismic.io
+*.ketchcdn.com
+*.ketchjs.com
+*.staticflickr.com
+cdnjs.cloudflare.com
+*.cdn-apple.com
+
+# Canvas Sentry backends
+k8s-sentryk8-sentry-e14f207f7b-2145498619.us-east-1.elb.amazonaws.com
+k8s-sentryk8-sentryre-87516dce11-99579125.us-east-1.elb.amazonaws.com
+
+# Apple services (needed for OS functionality)
+apple.com
+*.apple.com
+*.icloud.com
+*.aaplimg.com
+*.itunes.apple.com
+*.apple-cloudkit.com
+*.apple-dns.net
+*.icloud-content.com
+*.icloudedge.v.aaplimg.com
+p98-content.icloud.com
+p98-caldav.icloud.com
+cdn2.smoot.apple.com
+api-safari-ausw2b.smoot.apple.com
+gsp-ssl.ls.apple.com
+
+# Cloudflare CDN
+*.cloudflare.net
+*.cdn.cloudflare.net
+static.cloudflareinsights.com
+*.cloudflareinsights.com
+
+# Error reporting (Canvas uses Bugsnag + Sentry)
+sessions.bugsnag.com
+*.sentry.insops.net
+sentry.insops.net
+relay-iad.sentry.insops.net
+
+# Canvas analytics/accessibility
+cdn.pendo.io
+data.pendo.io
+*.pendo.io
+cdn.weglot.com
+cdn.weglot.com.cdn.cloudflare.net
+*.weglot.com
+wsmcdn.audioeye.com
+wsmcdn.audioeye.com.cdn.cloudflare.net
+*.audioeye.com
+
+# Kaltura (Canvas video player for embedded content)
+cdnsecakmi.kaltura.com
+cdnsecakmi-kaltura.edgekey.net
+5486552.kaf.kaltura.com
+*.kaltura.com
+
+# Unsplash (Canvas cover images)
+images.unsplash.com
+unsplash.imgix.net
+dualstack.com.imgix.map.fastly.net
+*.unsplash.com
+*.imgix.net
+
+# AWS S3 (Canvas file storage)
+*.s3.amazonaws.com
+*.s3.dualstack.us-east-1.amazonaws.com
+*.s3-us-west-2.amazonaws.com
+s3-r-w.us-west-2.amazonaws.com
+us-std-00001.s3.dualstack.us-east-1.amazonaws.com
+us-std-00003.s3.dualstack.us-east-1.amazonaws.com
+
+# AWS Global Accelerator
+ae23d151f96c6e6fb.awsglobalaccelerator.com
+*.awsglobalaccelerator.com
+
+# Akamai CDN edges
+*.akamaiedge.net
+*.akadns.net
+*.edgekey.net
+
+# Additional CloudFront distributions (Canvas)
+du11hjcvx0uqb.cloudfront.net
+d1mybsg2h91vjj.cloudfront.net
+
+# Google additional
+clients.l.google.com
+lh2.l.google.com
+plus.l.google.com
+*.l.google.com
+maps.googleapis.com
+imap.gmail.com
+
+# Education tools
+*.kamihq.com
+api.kamihq.com
+*.writable.com
+app.writable.com
+chat.writable.com
+chat-ws.writable.com
+fs.writable.com
+writable-images.s3-us-west-2.amazonaws.com
+*.newsela.com
+newsela.com
+*.teachtci.com
+subscriptions.teachtci.com
+cdnproduction.teachtci.com
+*.lucid.app
+integration.lucid.app
+*.edu-apps.org
+www.edu-apps.org
+*.canva.com
+www.canva.com
+
+# VEX Robotics
+*.vex.com
+api.vex.com
+codeexp.vex.com
+*.vexrobotics.com
+content.vexrobotics.com
+
+# School portals
+parent-tigardtualatin.cascadetech.org
+*.cascadetech.org
+
+# College/academic
+apply.tc.edu
+www.tc.columbia.edu
+*.columbia.edu
+highschool.fordservicetraining.com
+*.fordservicetraining.com
+
+# NIH / medical research
+*.nih.gov
+*.ncbi.nlm.nih.gov
+www.ninds.nih.gov
+cdn.ncbi.nlm.nih.gov
+pmc.ncbi.nlm.nih.gov
+www.rcpsych.ac.uk
+
+# JS/Font CDNs
+code.jquery.com
+unpkg.com
+p.typekit.net
+use.typekit.net
+*.typekit.net
+kit.fontawesome.com
+*.fontawesome.com
+*.walkme.com
+cdn.walkme.com
+papi.walkme.com
+
+# CMS / Survey platforms
+cdn.insight.sitefinity.com
+*.sitefinity.com
+cdn.icontentall.co.uk
+cdn.totum.com
+mx.technolutions.net
+*.technolutions.net
+*.qualtrics.com
+
+# Twitter embeds (needed for embedded tweets on education sites)
+platform.twitter.com
+syndication.twitter.com

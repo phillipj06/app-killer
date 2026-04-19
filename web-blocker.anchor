@@ -1,0 +1,16 @@
+# pf anchor for web-blocker
+# Block all outbound web traffic except to allowed IPs and localhost
+
+table <allowed_ips> persist file "/etc/pf.anchors/allowed-ips"
+
+# Always allow loopback
+pass out quick on lo0 all
+
+# Allow DNS so resolution works
+pass out quick proto { tcp, udp } to any port 53
+
+# Allow traffic to whitelisted IPs on web ports
+pass out quick proto tcp to <allowed_ips> port { 80, 443 }
+
+# Block everything else on web ports
+block return out proto tcp to any port { 80, 443 }
